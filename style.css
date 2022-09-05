@@ -68,7 +68,7 @@ img {
     margin: 0 auto;
     width: auto;
     max-width: 584px;
-    margin: 10px;
+    min-width: 100px;
 }
 
 .search-field:hover {

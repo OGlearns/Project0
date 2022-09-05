@@ -1,0 +1,127 @@
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.left_header {
+    display: inline-block;
+    color: #202124;
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.right_header {
+    display: inline;
+    position: fixed;
+    right: 15px;
+    color: #202124;
+    padding: 5px;
+    margin: 5px 5px 0px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header > a {
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+a {
+    margin: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #202124;
+}
+
+img {
+    margin: 20px;
+
+}
+
+.main {
+    grid-column: 1;
+    justify-items: center;
+    display: flex;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-field {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+    margin: 10px;
+}
+
+.search-field:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);  
+}
+
+.text-field {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 60%;
+    height: 34px;
+    font-size: 14px;
+}
+
+.mag {
+    /* display:flex */
+    padding: 12px;
+}
+
+.google-mic {
+    margin: 5px;
+    display: flex;
+}
+
+.search-btns {
+    display: flex;
+    display: grid;
+    display: block;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}

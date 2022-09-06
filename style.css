@@ -1,6 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: auto;
+    position: relative;
 }
 
 .left_header {
@@ -45,16 +46,17 @@ img {
 
 }
 
-.main {
+/* .main {
     grid-column: 1;
     justify-items: center;
     display: flex;
-}
+    position: relative;
+} */
 
 .grid-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .search-field {
@@ -125,3 +127,17 @@ img {
     cursor: pointer;
     user-select: none;
 }
+
+.images_logo {
+    display: flex;
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: relative;
+    left: 105px;
+    bottom: 2px;
+    top: -36px;
+    right: 10px;
+    white-space: nowrap;
+    height: min-content;
+    width: min-content;
+}   

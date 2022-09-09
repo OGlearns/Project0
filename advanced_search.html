@@ -4,46 +4,113 @@
         <!-- Set viewport width -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Images</title>
+        <title>Advanced Search</title>
     </head>
     <div class="container">
         <body>
             <!-- Header Start -->
-            <header>
+            <header class="advanced_header">
                     <div class="left_header">
-                        <!-- <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-com&utm_medium=referral&utm_campaign=hp-header">About</a>
-                        <a class="nav-link" href="https://store.google.com/CA?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a> -->
+                        <a href="index.html"><img alt="Google Logo" height="24" width="74" style="margin:4px;"src="googlelogo.png"></a>
                     </div>
-                    <div class="right_header">
-                        <!-- <a class="nav-link" href="images.html">Images</a>
-                        <a class="nav-link" href="advanced.html">Advanced Search</a> -->
-                    </div>
+                    <!-- Logo and search section -->
+                    <!-- Advanced Search header-->
+                    <label class="advanced_logo" >
+                            Advanced Search
+                    </label>
+                    <!-- End of header -->
+                    
             </header>
-            <!-- End of header -->
+                
 
-            <!-- Logo and search section -->
-            <!-- LOGO -->
-            <div class="grid-item" style="margin-bottom:-16px; margin-top:12px;">
-                <img alt="Google Logo" height="92" src="googlelogo.png" width="272">
-                <div class="images_logo">images</div>
+            <!-- FORM HEADER -->
+            <div role="form header" class="form_header">
+                <div>
+                    <span class="form_header">
+                        Find pages with...
+                    </span>
+                </div>
+                <div>
+                    <span class="form_header_right">
+                        To do this in the search box.
+
+                    </span>
+                </div>
             </div>
 
-
             <!-- Form -->
-            <div class="form">
+            <div>
                 <form action="https://www.google.com/images">
 
-                    <!-- Input field -->
-                    <div class="search-field">
-                        <svg class="mag" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5" /><path d="m17.571 17.5-5.571-5.5" /></g></svg>
-                        <input class="text-field" type="text" name="q">
-                        <img class="google-mic" alt="Search by voice" height="35" src="google-mic.png">
+                    <div role="search form" class="advaned_form">
+                        <div style="margin-bottom: 25px;">
+                            <label class="form_label">
+                                all these words:
+                            </label>
+                            <!-- <div style="max-width: 500px;"> -->
+                            <input class="form_input" name="as_q">
+                            <!-- </div> -->
+                            <span class="form_span">
+                                Type the important words:
+                                <span class="form_span2">
+                                    tri-colour rat terrier
+                                </span>
+                            </span>
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <label class="form_label">
+                                this exact word or phrase:
+                            </label>
+                            <!-- <div style="max-width: 500px;"> -->
+                            <input class="form_input" name="as_epq">
+                            <!-- </div> -->
+                            <span class="form_span">
+                                Put exact words in quotes:
+                                <span class="form_span2">
+                                    "rat terrier"
+                                </span>
+                            </span>
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <label class="form_label">
+                                any of these words:
+                            </label>
+                            <!-- <div style="max-width: 500px;"> -->
+                            <input class="form_input" name="as_oq">
+                            <!-- </div> -->
+                            <span class="form_span">
+                                Type <span style="font-family: monospace;font-size: 11px;color:#666;">OR</span> between all the words you want:
+                                <span class="form_span2">
+                                    miniature OR standard
+                                </span>
+                            </span>
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <label class="form_label">
+                                none of these words:
+                            </label>
+                            <!-- <div style="max-width: 500px;"> -->
+                            <input class="form_input" name="as_eq">
+                            <!-- </div> -->
+                            <span class="form_span" style="margin-top:0px;">
+                                Put a minus sign just before words that you don't want:
+                                <br>
+                                <span class="form_span2">
+                                    -rodent, -"Jack Russell"
+                                </span>
+                            </span>
+                        </div>
+
+                        
                     </div>
 
                     
                     <!-- Search Button(s)  -->
-                    <div class="search-btns">
-                        <input class="search-button" name="btnK" type="submit" value="Image Search">
+                    <div role="Advanced Search button">
+                        <input class="advanced_search_button" type="submit" value="Advanced Search">
                         <!-- <input class="search-button" name="btnI" type="submit" value="I'm Feeling Lucky"> -->
                     </div>
 
